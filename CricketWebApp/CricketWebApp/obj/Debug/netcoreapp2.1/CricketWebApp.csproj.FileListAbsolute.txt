@@ -1,0 +1,14 @@
+C:\Users\aayushi.aggarwal\source\repos\CricketWebApp\CricketWebApp\bin\Debug\netcoreapp2.1\CricketWebApp.deps.json
+C:\Users\aayushi.aggarwal\source\repos\CricketWebApp\CricketWebApp\bin\Debug\netcoreapp2.1\CricketWebApp.runtimeconfig.json
+C:\Users\aayushi.aggarwal\source\repos\CricketWebApp\CricketWebApp\bin\Debug\netcoreapp2.1\CricketWebApp.runtimeconfig.dev.json
+C:\Users\aayushi.aggarwal\source\repos\CricketWebApp\CricketWebApp\bin\Debug\netcoreapp2.1\CricketWebApp.dll
+C:\Users\aayushi.aggarwal\source\repos\CricketWebApp\CricketWebApp\bin\Debug\netcoreapp2.1\CricketWebApp.pdb
+C:\Users\aayushi.aggarwal\source\repos\CricketWebApp\CricketWebApp\obj\Debug\netcoreapp2.1\CricketWebApp.csprojAssemblyReference.cache
+C:\Users\aayushi.aggarwal\source\repos\CricketWebApp\CricketWebApp\obj\Debug\netcoreapp2.1\CricketWebApp.csproj.CoreCompileInputs.cache
+C:\Users\aayushi.aggarwal\source\repos\CricketWebApp\CricketWebApp\obj\Debug\netcoreapp2.1\CricketWebApp.RazorAssemblyInfo.cache
+C:\Users\aayushi.aggarwal\source\repos\CricketWebApp\CricketWebApp\obj\Debug\netcoreapp2.1\CricketWebApp.RazorAssemblyInfo.cs
+C:\Users\aayushi.aggarwal\source\repos\CricketWebApp\CricketWebApp\obj\Debug\netcoreapp2.1\CricketWebApp.AssemblyInfoInputs.cache
+C:\Users\aayushi.aggarwal\source\repos\CricketWebApp\CricketWebApp\obj\Debug\netcoreapp2.1\CricketWebApp.AssemblyInfo.cs
+C:\Users\aayushi.aggarwal\source\repos\CricketWebApp\CricketWebApp\obj\Debug\netcoreapp2.1\CricketWebApp.RazorTargetAssemblyInfo.cache
+C:\Users\aayushi.aggarwal\source\repos\CricketWebApp\CricketWebApp\obj\Debug\netcoreapp2.1\CricketWebApp.dll
+C:\Users\aayushi.aggarwal\source\repos\CricketWebApp\CricketWebApp\obj\Debug\netcoreapp2.1\CricketWebApp.pdb
