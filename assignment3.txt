@@ -1,0 +1,137 @@
+create database Cricket
+
+use Cricket 
+go
+
+create table Country(
+Country_id int primary key , 
+Country_name varchar(20),
+Continent varchar(20),
+Country_code varchar(30)
+ );
+ 
+ insert into Country values
+(1,'England','Europe','+44'),
+(2,'India','Asia','+91'),
+(3,'Australia','Australia','+61'),
+(4,'South Africa','Africa','+27'),
+(5,'New Zealand','Oceania','+64')
+;
+
+
+
+create table Player(
+Player_id int primary key ,
+Player_name varchar(30),
+Player_age int, 
+Player_countryid int foreign key references Country(Country_id));
+
+
+
+insert into Player values(18,'Virat',29,2),
+(8,'Ravindra',28,2),
+(45,'Rohit',31,2),
+(17,'Rishab',25,2),
+(1,'KL Rahul',28,2),
+(33,'Hardik',26,2),
+(93,'Jasprit',23,2),
+(15,'Bhuvneshwar',24,2),
+(16,'Mayank',26,2),
+(3,'Yuzvendra',27,2),
+(11,'Mohammed',31,2);
+
+
+
+
+insert into Player values(31,'David Warner',30,3),
+(5,'Aaron Finch',32,3),
+(32,'Marnus Labuschagne',27,3),
+(49,'Steve Smith',31,3),
+(56,'Mathew Wade',35,3),
+(67,'Cameron Green',24,3),
+(90,'Ashton Agar',28,3),
+(7,'Pat Cummins',28,3),
+(2,'Mitchel Starc',30,3),
+(12,'Josh Hazelwood',29,3),
+(13,'Nathan Lyon',33,3);
+
+
+insert into Player values(34,'Jason Roy',29,1),
+(28,'Jhonny Bairstow',28,1),
+(24,'Joe Root',30,1),
+(55,'Ben Stokes',25,1),
+(35,'David Malan',31,1),
+(98,'Eoin Morgan',32,1),
+(99,'Moeen Ali',33,1),
+(101,'Adil Rasheed',30,1),
+(58,'Chris Wokes',31,1),
+(71,'Stuart Broad',30,1),
+(40,'Jimmy Anderson',32,1);
+
+
+Insert into Player values
+(20,'Jason Roy',29,4),
+(81,'Jhonny Bairstow',28,4),
+(19,'Joe Root',30,4),
+(115,'Ben Stokes',25,4),
+(121,'David Malan',31,4),
+(191,'Eoin Morgan',32,4),
+(116,'Moeen Ali',33,4),
+(102,'Adil Rasheed',30,4),
+(175,'Chris Wokes',31,4),
+(212,'Stuart Broad',30,4),
+(139,'Jimmy Anderson',32,4)
+
+
+
+insert into Player VALUES(181,'Dimuth',29,5),
+(100,'Angelo ',28,5),
+(149,'Malinga',31,5),
+(917,'Kusal',25,5),
+(819,'Kasun',28,5),
+(739,'Dhananjaya',26,5),
+(499,'Suranga',23,5),
+(451,'Isuru',24,5),
+(376,'Kusal',26,5),
+(333,'Avishka',27,5),
+(611,'Lahiru',31,5);
+
+create table Stadium(
+Stadium_id int primary key,
+Stadium_count bigint ,
+Stadium_name varchar(50),
+No_of_matches_allowed int);
+
+
+insert into Stadium values(1,50000,'Ekana Cricket Stadium',3),
+(2,65000,'Naya Raipur International Cricket Stadium',2),
+(3,30000,'Sawai Man Singh Stadium',3),
+(4,50000,'M.A. Chidambaram Stadium',3),
+(5,41820,'Arun Jaitley Stadium',2),
+(6,25000,'Brabourne Stadium',1),
+(7,32000,'Green Park Stadium',2),
+(8,33108,'Wankhede Stadium',3),
+(9,45000,'Barabati Stadium',1),
+(10,26950,'Inderjit Singh Bindra Stadium',1);
+
+
+create table Matches(
+Match_id int primary key ,
+Stadium_id int foreign key references Stadium(Stadium_id),
+TeamA int foreign key references Country(Country_id),
+TeamB int foreign key references Country(Country_id),
+Result int,
+Date_time datetime,
+Was_Match_Played int);
+
+
+insert into matches values(1,6,1,4,null,'2022-05-23 9:00:00',1),
+(2,4,2,3,null,'2022-05-24 11:00:00',1),
+(3,1,4,5,null,'2022-05-25 11:00:00',1),
+(4,4,3,1,null,'2022-05-26 2:00:00',0),
+(5,4,5,3,null,'2022-05-27 11:00:00',1),
+(7,9,1,2,null,'2022-05-28 11:00:00',0),
+(8,4,2,5,null,'2022-05-29 11:00:00',1),
+(9,9,3,4,null,'2022-05-30 5:00:00',1),
+(10,4,2,3,null,'2022-06-01 11:00:00',1),
+(11,9,5,1,null,'2022-06-02 1:00:00',1);
